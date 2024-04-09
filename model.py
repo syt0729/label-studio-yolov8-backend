@@ -16,7 +16,8 @@ class YOLOv8Model(LabelStudioMLBase):
         self.from_name = from_name
         self.to_name = schema['to_name'][0]
         self.labels = ['Edible', 'Inedible', 'Visual defects']
-        self.model = YOLO("best.pt")
+        self.labels = ['person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus', 'train', 'truck', 'boat', 'traffic light', 'fire hydrant', 'stop sign', 'parking meter', 'bench', 'bird', 'cat', 'dog', 'horse', 'sheep', 'cow', 'elephant', 'bear', 'zebra', 'giraffe', 'backpack', 'umbrella', 'handbag', 'tie', 'suitcase', 'frisbee', 'skis', 'snowboard', 'sports ball', 'kite', 'baseball bat', 'baseball glove', 'skateboard', 'surfboard', 'tennis racket', 'bottle', 'wine glass', 'cup', 'fork', 'knife', 'spoon', 'bowl', 'banana', 'apple', 'sandwich', 'orange', 'broccoli', 'carrot', 'hot dog', 'pizza', 'donut', 'cake', 'chair', 'couch', 'potted plant', 'bed', 'dining table', 'toilet', 'tv', 'laptop', 'mouse', 'remote', 'keyboard', 'cell phone', 'microwave', 'oven', 'toaster', 'sink', 'refrigerator', 'book', 'clock', 'vase', 'scissors', 'teddy bear', 'hair drier', 'toothbrush']
+        self.model = YOLO("yolov8n.pt")
 
     def predict(self, tasks, **kwargs):
         """ This is where inference happens: model returns 
@@ -29,8 +30,19 @@ class YOLOv8Model(LabelStudioMLBase):
 
         header = {
             "Authorization": "Token " + LS_API_TOKEN}
-        image = Image.open(BytesIO(requests.get(
-            LS_URL + task['data']['image'], headers=header).content))
+        
+        print("syt task: ", task["data"])
+        if ("local-file" in task['data']['image']):
+            '/data/local-files/?d=coco_test/COCO_val2014_000000004497.jpg'
+            image_path = os.path.join("/data/label-studio/files", task["data"]['image'].split("?d=")[-1])
+            print("syt image path: ", image_path)
+            image = Image.open(image_path)
+        else:
+            image_url = LS_URL + task['data']['image']
+            image = Image.open(BytesIO(requests.get(
+                image_url, headers=header).content))
+        
+
         original_width, original_height = image.size
         results = self.model.predict(image)
 

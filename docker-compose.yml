@@ -1,4 +1,4 @@
-version: "3.8"
+version: "3.3"
 
 services:
   redis:
@@ -10,8 +10,9 @@ services:
     expose:
       - 6379
   server:
+    image: label-studio-yolov8-ml:20240409
     container_name: label-studio-ml
-    build: .
+    # build: .
     env_file:
       - .env
     environment:
@@ -29,3 +30,5 @@ services:
     volumes:
       - "./data/server:/data"
       - "./logs:/tmp"
+      - "./:/app"
+      - "/data/label-studio/files:/data/label-studio/files"

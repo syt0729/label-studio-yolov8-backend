@@ -1,3 +1,4 @@
+# build image name: label-studio-yolov8-ml:latest
 FROM python:3.10-slim
 
 ENV PYTHONUNBUFFERED=True \
@@ -6,6 +7,7 @@ ENV PYTHONUNBUFFERED=True \
 WORKDIR /app
 COPY requirements.txt .
 
+RUN pip config set global.index-url https://mirrors.aliyun.com/pypi/simple
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . ./

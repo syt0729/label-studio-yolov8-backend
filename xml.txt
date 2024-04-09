@@ -1,0 +1,80 @@
+<Label value="person" background="#5a476a"/>
+<Label value="bicycle" background="#de665d"/>
+<Label value="car" background="#b6bd3d"/>
+<Label value="motorcycle" background="#fdabca"/>
+<Label value="airplane" background="#b27430"/>
+<Label value="bus" background="#2eb63f"/>
+<Label value="train" background="#00ad21"/>
+<Label value="truck" background="#5bcd36"/>
+<Label value="boat" background="#2f6d33"/>
+<Label value="traffic light" background="#ba095e"/>
+<Label value="fire hydrant" background="#da4e02"/>
+<Label value="stop sign" background="#4a44a6"/>
+<Label value="parking meter" background="#fb03cb"/>
+<Label value="bench" background="#ed893f"/>
+<Label value="bird" background="#84800e"/>
+<Label value="cat" background="#68dfa9"/>
+<Label value="dog" background="#1803e6"/>
+<Label value="horse" background="#cc9e49"/>
+<Label value="sheep" background="#bbef5f"/>
+<Label value="cow" background="#29bf27"/>
+<Label value="elephant" background="#653040"/>
+<Label value="bear" background="#2f305e"/>
+<Label value="zebra" background="#f7a16f"/>
+<Label value="giraffe" background="#f7ade4"/>
+<Label value="backpack" background="#f3eda0"/>
+<Label value="umbrella" background="#e1b100"/>
+<Label value="handbag" background="#06197b"/>
+<Label value="tie" background="#eac6ac"/>
+<Label value="suitcase" background="#4f85c4"/>
+<Label value="frisbee" background="#820a38"/>
+<Label value="skis" background="#0a63a2"/>
+<Label value="snowboard" background="#223ecf"/>
+<Label value="sports ball" background="#606264"/>
+<Label value="kite" background="#fc104b"/>
+<Label value="baseball bat" background="#380a3e"/>
+<Label value="baseball glove" background="#3f355a"/>
+<Label value="skateboard" background="#0f62d3"/>
+<Label value="surfboard" background="#c38005"/>
+<Label value="tennis racket" background="#fe4e76"/>
+<Label value="bottle" background="#488774"/>
+<Label value="wine glass" background="#d9f542"/>
+<Label value="cup" background="#841727"/>
+<Label value="fork" background="#664ef4"/>
+<Label value="knife" background="#173206"/>
+<Label value="spoon" background="#4e485c"/>
+<Label value="bowl" background="#5bb6ce"/>
+<Label value="banana" background="#4d48c6"/>
+<Label value="apple" background="#b58fb8"/>
+<Label value="sandwich" background="#d2341f"/>
+<Label value="orange" background="#fa34ab"/>
+<Label value="broccoli" background="#c3306c"/>
+<Label value="carrot" background="#401003"/>
+<Label value="hot dog" background="#8882d2"/>
+<Label value="pizza" background="#fcbd55"/>
+<Label value="donut" background="#3e028e"/>
+<Label value="cake" background="#41504e"/>
+<Label value="chair" background="#84b7a8"/>
+<Label value="couch" background="#78f67a"/>
+<Label value="potted plant" background="#eda896"/>
+<Label value="bed" background="#257ee1"/>
+<Label value="dining table" background="#47c330"/>
+<Label value="toilet" background="#f83226"/>
+<Label value="tv" background="#8b02dd"/>
+<Label value="laptop" background="#ce94d3"/>
+<Label value="mouse" background="#0f834e"/>
+<Label value="remote" background="#72f867"/>
+<Label value="keyboard" background="#566aad"/>
+<Label value="cell phone" background="#db0238"/>
+<Label value="microwave" background="#edabef"/>
+<Label value="oven" background="#c0c45c"/>
+<Label value="toaster" background="#c10727"/>
+<Label value="sink" background="#d999e8"/>
+<Label value="refrigerator" background="#19bd6d"/>
+<Label value="book" background="#4b7f7e"/>
+<Label value="clock" background="#80736b"/>
+<Label value="vase" background="#3d205f"/>
+<Label value="scissors" background="#f0bc67"/>
+<Label value="teddy bear" background="#8ff85d"/>
+<Label value="hair drier" background="#c4bdc3"/>
+<Label value="toothbrush" background="#13eb2e"/>
